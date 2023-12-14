@@ -1,9 +1,10 @@
+import { RxHamburgerMenu } from "react-icons/rx";
+
 const Header = () => {
   return (
-    <div className="w-full text-center pb-10">
-      this is the Header
-      <br />
-      <div className="text-2xl font-extrabold">🦄 Licorne Labs</div>
+    <div className="w-full pb-10 flex space-evenly">
+      <RxHamburgerMenu size="2rem" color="" />
+      <div className="py-4 text-4xl">🦄 Licorne Labs</div>
     </div>
   );
 };
