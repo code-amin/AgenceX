@@ -2,7 +2,7 @@ import { FcIdea } from "react-icons/fc";
 
 const Hero = () => {
   return (
-    <div className="bg-gray-900 text-white py-10 md:py-20 flex flex-col md:flex-row items-center">
+    <div className="bg-gray-900 text-white py-20 md:py-20 flex flex-col md:flex-row items-center">
       <div className="max-w-md mx-auto md:max-w-none md:w-1/2 md:order-2 md:ml-auto md:mr-0">
         <FcIdea className="text-yellow-500 w-20 md:w-32 lg:w-40 h-20 md:h-32 lg:h-40" size={500} style={{ margin: "0 auto" }}  />
       </div>
