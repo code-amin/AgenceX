@@ -1,5 +1,4 @@
 import { RxHamburgerMenu } from "react-icons/rx";
-import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
@@ -23,15 +22,15 @@ const Header = () => {
       {isMenuOpen && (
         <div
           className={
-            "MOBILE-MENU absolute top-16 transition-transform duration-500 ease-in-out w-5/6 bg-gray-900 shadow-2xl " +
+            "MOBILE-MENU absolute top-16 transition-transform left-0 h-[100vh] duration-500 ease-in-out w-5/6 bg-gray-900 shadow-2xl " +
             (isMenuOpen ? "visible" : "hidden")
           }
         >
-          <ul>
+          <ul className="">
             <li>
               <a
                 href="/#realizations"
-                className="block px-2 py-3"
+                className="block hover:text-3xl transition-transform duration-1000 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
                 onClick={handleHamburger}
               >
                 Realizations
@@ -40,7 +39,7 @@ const Header = () => {
             <li>
               <a
                 href="/#services"
-                className="block px-2 py-3"
+                className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
                 onClick={handleHamburger}
               >
                 Services
@@ -49,7 +48,7 @@ const Header = () => {
             <li>
               <a
                 href="/#pricing"
-                className="block px-2 py-3"
+                className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
                 onClick={handleHamburger}
               >
                 Pricing
@@ -58,7 +57,7 @@ const Header = () => {
             <li>
               <a
                 href="/Blog"
-                className="block px-2 py-3"
+                className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
                 onClick={handleHamburger}
               >
                 Blog

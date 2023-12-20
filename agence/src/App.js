@@ -9,7 +9,6 @@ import Process from "./Process";
 import Pricing from "./Pricing";
 import Footer from "./Footer";
 import Socials from "./Socials";
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 const App = () => {
   return (
