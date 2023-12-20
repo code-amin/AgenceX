@@ -10,20 +10,20 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full p-4 text-2xl fixed flex text-white bg-gray-900 shadow-lg">
+    <header className="HEADER w-full p-4 text-2xl fixed flex text-white bg-gray-900 shadow-lg">
       <RxHamburgerMenu
         className={
-          "flex-0 mr-10 transform transition-transform duration-500 ease-in-out md:hidden " +
+          "HAMBURGER flex-0 mr-10 transform transition-transform duration-500 ease-in-out md:hidden " +
           (isMenuOpen ? "rotate-90 " : "rotate-0 ")
         }
-        size="2rem"
+        size="32px"
         onClick={handleHamburger}
       />
 
       {isMenuOpen && (
         <div
           className={
-            "absolute top-16 transition-transform duration-500 ease-in-out w-5/6  bg-gray-900 shadow-2xl " +
+            "MOBILE-MENU absolute top-16 transition-transform duration-500 ease-in-out w-5/6 bg-gray-900 shadow-2xl " +
             (isMenuOpen ? "visible" : "hidden")
           }
         >
@@ -69,7 +69,7 @@ const Header = () => {
       )}
 
       <a href="/" className={"flex "}>
-        <div className="border-[1px] p-1 ">
+        <div className="LOGO border-[1px] p-1 ">
           <p className="transform hover:rotate-[-360deg] transition-transform duration-700">
             🦄
           </p>
