@@ -9,18 +9,18 @@ const Header = () => {
   };
 
   return (
-    <header className="HEADER w-full p-4 text-2xl fixed flex text-white bg-gray-900 shadow-lg transition-transform">
+    <header className="HEADER w-full p-4 text-2xl relative flex text-white bg-gray-900 shadow-lg transition-transform">
       <div className="flex-1"></div>
       <div
-        className={`MOBILE-MENU absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 shadow-2xl ${
+        className={`MOBILE-MENU absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 drop-shadow-2xl ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-300 `}
       >
-        <ul className="">
+        <ul className="pt-4">
           <li>
             <a
               href="/#realizations"
-              className="block hover:text-3xl transition-transform duration-1000 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
+              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
               onClick={handleHamburger}
             >
               Realizations
@@ -56,7 +56,7 @@ const Header = () => {
         </ul>
       </div>
 
-      <a href="/" className={"flex "}>
+      <a href="/" className={"flex overflow-ghi "}>
         <div className="LOGO border-[1px] p-1 ">
           <p className="transform hover:rotate-[-360deg] transition-transform duration-700">
             🦄
@@ -73,6 +73,29 @@ const Header = () => {
         size="32px"
         onClick={handleHamburger}
       />
+      <ul className="flex">
+        <li>
+          <a
+            href="/#realizations"
+            className="px-10 hover:underline hidden md:block"
+          >
+            {" "}
+            Realizations
+          </a>
+        </li>
+        <a href="/#services" className="px-10 hover:underline hidden md:block">
+          {" "}
+          Services
+        </a>
+        <a href="/#pricing" className="px-10 hover:underline hidden md:block">
+          {" "}
+          Pricing
+        </a>
+        <a href="/Blog" className="px-10 hover:underline hidden md:block">
+          {" "}
+          Blog
+        </a>
+      </ul>
     </header>
   );
 };
