@@ -10,11 +10,11 @@ const Header = () => {
 
   return (
     <header className="HEADER w-full p-4 text-2xl relative flex text-white bg-gray-900 shadow-lg transition-transform">
-      <div className="flex-1"></div>
-      <div
-        className={`MOBILE-MENU absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 drop-shadow-2xl ${
+      <div className="flex-1 md:hidden"></div>
+      <nav
+        className={`MENU  absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 drop-shadow-2xl ease-in-out duration-300 ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } ease-in-out duration-300 `}
+        }  `}
       >
         <ul className="pt-4">
           <li>
@@ -54,9 +54,9 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
 
-      <a href="/" className={"flex overflow-ghi "}>
+      <a href="/" className={"flex "}>
         <div className="LOGO border-[1px] p-1 ">
           <p className="transform hover:rotate-[-360deg] transition-transform duration-700">
             🦄
@@ -73,29 +73,34 @@ const Header = () => {
         size="32px"
         onClick={handleHamburger}
       />
-      <ul className="flex">
-        <li>
+      <nav className="NAVBAR">
+        <ul className="flex">
+          <li>
+            <a
+              href="/#realizations"
+              className="px-10 hover:underline hidden md:block"
+            >
+              {" "}
+              Realizations
+            </a>
+          </li>
           <a
-            href="/#realizations"
+            href="/#services"
             className="px-10 hover:underline hidden md:block"
           >
             {" "}
-            Realizations
+            Services
           </a>
-        </li>
-        <a href="/#services" className="px-10 hover:underline hidden md:block">
-          {" "}
-          Services
-        </a>
-        <a href="/#pricing" className="px-10 hover:underline hidden md:block">
-          {" "}
-          Pricing
-        </a>
-        <a href="/Blog" className="px-10 hover:underline hidden md:block">
-          {" "}
-          Blog
-        </a>
-      </ul>
+          <a href="/#pricing" className="px-10 hover:underline hidden md:block">
+            {" "}
+            Pricing
+          </a>
+          <a href="/Blog" className="px-10 hover:underline hidden md:block">
+            {" "}
+            Blog
+          </a>
+        </ul>
+      </nav>
     </header>
   );
 };
