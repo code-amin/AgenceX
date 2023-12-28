@@ -1,5 +1,5 @@
 const Blog = () => {
-  return <> blog W.i.p</>;
+  return <> </>;
 };
 
 export default Blog;

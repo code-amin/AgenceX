@@ -2,7 +2,7 @@
 
 const Pricing = () => {
   return (
-    <div className="bg-gray-900 py-8">
+    <div id="pricing" className="bg-gray-900 py-8">
       <h2 className="text-2xl font-bold text-white text-center mb-8">Our Pricing</h2>
       <div className="flex flex-col md:flex-row justify-center">
         {/* Package 1 */}

@@ -12,8 +12,8 @@ const Header = () => {
     <header className="HEADER w-full p-4 text-2xl relative flex text-white bg-gray-900 shadow-lg transition-transform">
       <div className="flex-1 md:hidden"></div>
       <nav
-        className={`MENU  absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 drop-shadow-2xl ease-in-out duration-300 ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        className={`MENU absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 drop-shadow-2xl ease-in-out duration-300 ${
+          isMenuOpen ? "visible" : "hidden"
         }  `}
       >
         <ul className="pt-4">
@@ -42,6 +42,15 @@ const Header = () => {
               onClick={handleHamburger}
             >
               Pricing
+            </a>
+          </li>{" "}
+          <li>
+            <a
+              href="/#sitemap"
+              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
+              onClick={handleHamburger}
+            >
+              Sitemap
             </a>
           </li>
           <li>
