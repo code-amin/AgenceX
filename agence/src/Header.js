@@ -9,11 +9,11 @@ const Header = () => {
   };
 
   return (
-    <header className="HEADER w-full p-4 text-2xl relative flex text-white bg-gray-900 shadow-lg transition-transform">
+    <header className="HEADER w-full p-4 text-2xl fixed flex text-white bg-gray-800 shadow-lg transition-transform">
       <div className="flex-1 md:hidden"></div>
       <nav
-        className={`MENU absolute top-16 right-0 translate-transition h-[100vh] w-5/6 bg-gray-900 drop-shadow-2xl ease-in-out duration-300 ${
-          isMenuOpen ? "visible" : "hidden"
+        className={`MENU h-screen fixed top-16 transition-all w-5/6 p-3 bg-gray-800 drop-shadow-2xl duration-500 ${
+          isMenuOpen ? "right-0" : "-right-full"
         }  `}
       >
         <ul className="pt-4">
@@ -76,7 +76,7 @@ const Header = () => {
 
       <RxHamburgerMenu
         className={
-          "HAMBURGER flex-0 ml-10 transform transition-transform duration-500 ease-in-out md:hidden " +
+          "HAMBURGER flex-0 ml-10 transition-all duration-500 ease-in-out md:hidden " +
           (isMenuOpen ? "rotate-90 " : "rotate-0 ")
         }
         size="32px"
