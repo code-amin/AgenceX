@@ -1,6 +1,6 @@
 const Process = () => {
   return (
-    <div id="process" className="bg-gray-900 text-white px-8">
+    <div id="process" className="px-8">
       <h2 className="text-2xl font-bold text-center mb-4">
         Our 3 Step Process
       </h2>

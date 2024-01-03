@@ -7,12 +7,14 @@ import Arguments from "./Arguments";
 import Reviews from "./Reviews";
 import Process from "./Process";
 import Pricing from "./Pricing";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import Socials from "./Socials";
 
 const App = () => {
+
   return (
-    <>
+    <div className="bg-gray-900 text-white">
       <Header />
       <Hero />
       <Realizations />
@@ -21,10 +23,11 @@ const App = () => {
       <Reviews />
       <Process />
       <Pricing />
+      <Contact />
       <Socials />
       <Footer />
       <Blog />
-    </>
+    </div>
   );
 };
 

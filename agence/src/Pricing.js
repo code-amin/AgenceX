@@ -2,11 +2,13 @@
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="bg-gray-900 py-8">
-      <h2 className="text-2xl font-bold text-white text-center mb-8">Our Pricing</h2>
-      <div className="flex flex-col md:flex-row justify-center">
+    <div id="pricing" className="bg-gray-900 py-8 pt-24">
+      <h2 className="text-2xl font-bold text-white text-center mb-8">
+        Our Pricing
+      </h2>
+      <div className="text-black flex flex-col md:flex-row justify-center mx-4">
         {/* Package 1 */}
-        <div className="bg-white shadow-md rounded-lg w-full md:w-1/3 mx-4 mb-4">
+        <div className="bg-white shadow-md rounded-lg w-full md:w-1/3 md:mx-4 mb-4">
           <div className="py-6 px-4">
             <h3 className="text-lg font-semibold text-center mb-4">Basic</h3>
             <p className="text-2xl font-bold text-center mb-4">$29</p>
@@ -22,7 +24,7 @@ const Pricing = () => {
         </div>
 
         {/* Package 2 */}
-        <div className="bg-white shadow-md rounded-lg w-full md:w-1/3 mx-4 mb-4">
+        <div className="bg-white shadow-md rounded-lg w-full md:w-1/3 md:mx-4 mb-4">
           <div className="py-6 px-4">
             <h3 className="text-lg font-semibold text-center mb-4">Standard</h3>
             <p className="text-2xl font-bold text-center mb-4">$59</p>
@@ -38,7 +40,7 @@ const Pricing = () => {
         </div>
 
         {/* Package 3 */}
-        <div className="bg-white shadow-md rounded-lg w-full md:w-1/3 mx-4 mb-4">
+        <div className="bg-white shadow-md rounded-lg w-full md:w-1/3 md:mx-4 mb-4">
           <div className="py-6 px-4">
             <h3 className="text-lg font-semibold text-center mb-4">Premium</h3>
             <p className="text-2xl font-bold text-center mb-4">$99</p>
@@ -58,4 +60,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-
