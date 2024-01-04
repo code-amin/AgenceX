@@ -9,10 +9,10 @@ const Header = () => {
   };
 
   return (
-    <header className="HEADER w-full p-4 text-2xl fixed flex text-white bg-gray-800 shadow-lg transition-transform">
+    <header className="HEADER w-full py-4 text-2xl fixed flex bg-gray-800 shadow-lg transition-transform top-0 left-0">
       <div className="flex-1 md:hidden"></div>
       <nav
-        className={`MENU h-screen fixed top-16 transition-all w-5/6 p-3 bg-gray-800 drop-shadow-2xl duration-500 ${
+        className={`MENU h-screen fixed top-16 transition-all w-5/6 py-3 bg-gray-800 drop-shadow-2xl duration-500 ${
           isMenuOpen ? "right-0" : "-right-full"
         }  `}
       >

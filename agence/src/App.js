@@ -14,7 +14,7 @@ import Socials from "./Socials";
 const App = () => {
 
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-gray-900 text-white px-[3vw]">
       <Header />
       <Hero />
       <Realizations />
