@@ -1,19 +1,17 @@
-const Contact = () => {
+const Contact = ({ plan }) => {
   return (
-    <div className="CONTACT  text-center py-8 pt-24">
-      <h2 className="text-2xl font-bold text-white text-center mb-8">
-        Contactez-nous{" "}
-      </h2>
+    <div className="CONTACT text-center py-8 pt-24">
+      <h2 className="text-2xl font-bold mb-8">Contactez-nous</h2>
       <form className="border rounded ">
-        <label for="fname">Prénom:</label>
-        <input type="text" id="fname" name="fname" />
-        <label for="lname">Sujet:</label>
+        <label htmlFor="fname">Prénom:</label>
+        <input type="text" id="fname" name="fname" className="text-black" />
+        <label htmlFor="lname">Sujet:</label>
         <input
           className="text-gray-400 text-normal text-italic italic"
           type="text"
           id="plan"
           name="plan"
-          value={` 29$ plan`}
+          placeholder={`${plan}`}
         />
         <input
           type="submit"

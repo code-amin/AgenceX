@@ -10,8 +10,14 @@ import Pricing from "./Pricing";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Socials from "./Socials";
+import { useState } from "react";
 
 const App = () => {
+  const [plan, setPlan] = useState("Besoin d'innovation...");
+
+  const handlePlanSelection = (price) => {
+    setPlan(price);
+  };
 
   return (
     <div className="bg-gray-900 text-white px-[3vw]">
@@ -22,8 +28,8 @@ const App = () => {
       <Arguments />
       <Reviews />
       <Process />
-      <Pricing />
-      <Contact />
+      <Pricing onSelectPlan={handlePlanSelection} plan={plan} />
+      <Contact plan={plan} />
       <Socials />
       <Footer />
       <Blog />
