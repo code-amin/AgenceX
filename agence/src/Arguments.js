@@ -1,6 +1,6 @@
 const Arguments = () => {
   return (
-    <div className=" ">
+    <div id="arguments">
       <h2 className="text-2xl font-bold text-center mb-4">
         Why work with the 🦄 Lab{" "}
       </h2>

@@ -1,5 +1,6 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
+import Menu from "./Menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,74 +9,38 @@ const Header = () => {
   };
 
   return (
-    <header className="HEADER w-full py-4 text-2xl fixed flex bg-gray-800 shadow-lg transition-transform top-0 left-0">
+    <header className="HEADER font-MyFont items-center w-full py-4 text-2xl fixed flex bg-gray-800 shadow-lg transition-transform top-0 left-0">
       <div className="flex-1 md:hidden"></div>
-      <nav
-        className={`MENU h-screen fixed top-16 transition-all w-5/6 py-3 bg-gray-800 drop-shadow-2xl duration-500 ${
-          isMenuOpen ? "right-0" : "-right-full"
-        }  `}
-      >
-        <ul className="pt-4">
-          <li>
-            <a
-              href="/#realizations"
-              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
-              onClick={handleHamburger}
+      <a href="/" className="flex items-center">
+        <div className="LOGO p-1 ">
+          {/* animation:transform hover:rotate-[-360deg] transition-transform origin-center duration-700  hover:fill-current hover:text-pink-200*/}
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 1350.000000 1350.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g
+              transform="translate(0.000000,1350.000000) scale(0.100000,-0.100000)"
+              fill="#ffffff"
+              stroke=""
             >
-              Realizations
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#services"
-              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
-              onClick={handleHamburger}
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="/#pricing"
-              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
-              onClick={handleHamburger}
-            >
-              Pricing
-            </a>
-          </li>{" "}
-          <li>
-            <a
-              href="/#sitemap"
-              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
-              onClick={handleHamburger}
-            >
-              Sitemap
-            </a>
-          </li>
-          <li>
-            <a
-              href="/Blog"
-              className="block hover:text-3xl transition-transform duration-800 ease-in-out transform hover:translate-x-1 pl-4 py-3 hover:cursor-pointer"
-              onClick={handleHamburger}
-            >
-              Blog
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="/" className={"flex "}>
-        <div className="LOGO border-[1px] p-1 ">
-          <p className="transform hover:rotate-[-360deg] transition-transform duration-700">
-            🦄
-          </p>
+              <path d="M11274 11736 c-3 -9 -10 -16 -15 -16 -5 0 -62 -39 -128 -87 -65 -49 -178 -131 -250 -183 -72 -52 -148 -107 -169 -122 -20 -15 -95 -70 -167 -122 -71 -52 -146 -106 -165 -120 -19 -14 -91 -66 -160 -116 -69 -50 -141 -102 -160 -116 -19 -14 -93 -68 -165 -120 -71 -52 -147 -107 -168 -122 -21 -15 -84 -61 -140 -103 -56 -41 -124 -90 -152 -109 -27 -19 -55 -39 -62 -45 -6 -5 -71 -53 -143 -105 -73 -52 -177 -128 -231 -167 -101 -74 -135 -86 -160 -57 -11 14 -92 72 -137 99 -53 32 -72 49 -72 65 0 18 53 127 91 185 10 17 22 37 26 45 36 78 262 326 370 406 35 25 69 51 76 58 7 7 42 32 80 56 37 24 67 48 67 52 0 14 -216 9 -328 -7 -127 -18 -241 -42 -297 -61 -23 -8 -46 -14 -53 -14 -7 0 -40 -13 -75 -30 -74 -35 -90 -28 -63 28 10 20 22 44 27 52 5 8 13 24 18 35 5 11 21 37 35 58 14 21 26 40 26 43 0 7 84 118 120 158 14 16 77 83 140 148 148 154 147 152 79 144 -57 -8 -159 -29 -246 -52 -113 -30 -169 -46 -198 -56 -16 -5 -43 -13 -60 -18 -38 -11 -92 -29 -130 -45 -16 -7 -50 -20 -75 -30 -55 -22 -170 -73 -190 -86 -8 -5 -24 -13 -36 -18 -91 -40 -288 -183 -371 -269 -70 -73 -79 -74 -183 -32 -30 12 -68 25 -85 30 -16 4 -41 12 -55 17 -28 11 -103 34 -195 59 -33 8 -76 21 -95 27 -19 6 -53 14 -75 17 -22 4 -60 12 -85 18 -120 29 -327 62 -455 72 -422 34 -456 34 -790 9 -204 -15 -483 -54 -607 -85 -32 -8 -68 -14 -81 -14 -13 0 -43 -6 -68 -14 -24 -8 -57 -17 -73 -21 -45 -10 -13 -25 53 -25 100 0 262 -46 401 -112 80 -39 93 -48 91 -64 -1 -4 -111 -6 -245 -5 -183 2 -275 -2 -363 -14 -155 -21 -333 -62 -401 -91 -18 -8 -39 -14 -47 -14 -7 0 -26 -6 -42 -14 -15 -7 -44 -20 -63 -29 -95 -41 -131 -60 -208 -109 -24 -16 -45 -28 -48 -28 -3 0 -58 -40 -122 -89 -198 -151 -340 -302 -546 -582 -58 -79 -159 -216 -223 -304 -235 -318 -410 -494 -646 -650 -74 -48 -65 -67 20 -41 32 10 83 25 113 33 54 15 81 24 170 58 82 31 284 127 345 165 17 10 50 30 75 43 25 14 61 34 80 45 62 36 176 92 188 92 21 0 13 -18 -45 -108 -50 -75 -125 -217 -168 -317 -50 -114 -158 -336 -226 -460 -27 -49 -52 -97 -56 -105 -4 -8 -25 -46 -48 -85 -22 -38 -44 -77 -48 -85 -25 -51 -146 -229 -241 -355 -126 -168 -333 -375 -376 -375 -5 0 -10 -7 -10 -16 0 -13 7 -15 33 -11 62 10 249 72 310 103 16 8 33 14 38 14 27 0 436 203 462 229 6 6 20 11 30 11 16 0 18 -5 12 -27 -4 -16 -11 -55 -15 -88 -5 -33 -13 -91 -19 -130 -33 -215 -41 -332 -41 -610 0 -289 7 -386 46 -625 8 -52 22 -118 30 -146 8 -28 14 -59 14 -69 0 -15 13 -62 42 -150 5 -16 13 -43 18 -60 13 -47 52 -155 75 -210 29 -65 77 -171 85 -185 5 -8 21 -37 35 -65 14 -27 35 -63 45 -80 11 -16 23 -37 27 -45 12 -25 64 -101 127 -185 141 -188 430 -441 611 -534 11 -6 47 -26 80 -45 33 -19 191 -100 350 -181 160 -81 317 -162 350 -180 33 -19 69 -39 80 -45 11 -6 34 -19 50 -30 17 -11 39 -24 50 -30 50 -26 135 -83 207 -137 91 -69 99 -57 40 58 -49 96 -122 216 -197 326 -46 67 -255 346 -265 353 -19 15 -340 453 -340 465 0 2 -16 27 -35 56 -19 29 -53 91 -75 138 -23 47 -48 98 -56 113 -8 14 -14 33 -14 42 0 8 -6 30 -14 48 -21 51 -46 162 -46 207 0 41 16 56 26 24 24 -80 155 -331 236 -453 111 -168 301 -385 464 -531 92 -82 200 -178 294 -260 47 -40 109 -96 139 -124 69 -64 58 -55 186 -170 501 -452 811 -869 1005 -1355 12 -30 26 -63 31 -72 11 -22 38 -94 49 -133 4 -16 14 -46 21 -65 6 -19 17 -51 24 -70 12 -35 31 -99 61 -207 8 -32 22 -79 30 -104 8 -26 14 -55 14 -64 0 -10 6 -41 14 -69 8 -28 21 -85 29 -126 37 -179 49 -230 57 -230 9 0 60 61 170 200 25 31 60 76 79 98 18 23 64 84 102 134 38 51 72 98 77 103 4 6 23 33 42 60 100 148 116 171 125 187 5 9 40 65 76 125 114 186 279 507 279 542 0 5 6 22 14 38 26 52 46 104 46 118 0 8 6 29 14 47 7 18 21 58 29 88 129 461 129 832 0 1290 -18 62 -41 127 -90 253 -38 98 -142 315 -191 397 -11 19 -30 52 -41 72 -11 21 -33 57 -48 80 -37 58 -51 80 -59 98 -8 14 -73 111 -126 185 -16 22 -36 51 -46 65 -29 44 -219 296 -234 311 -19 19 -187 243 -224 300 -59 87 -136 259 -154 344 -5 22 -14 56 -20 75 -18 62 -12 287 10 373 21 83 44 156 59 184 5 10 26 52 46 93 35 69 74 132 136 220 13 19 26 37 29 40 3 3 29 35 59 73 29 37 57 65 62 61 5 -3 9 -28 9 -55 0 -66 41 -244 74 -324 141 -337 369 -564 639 -635 59 -16 107 -20 262 -20 178 0 196 -2 265 -26 41 -14 83 -28 93 -31 11 -3 44 -19 75 -34 31 -16 59 -29 64 -29 4 0 45 -22 92 -50 106 -63 138 -103 192 -240 59 -154 115 -260 157 -301 41 -41 76 -52 119 -37 41 15 62 93 55 207 -4 47 -9 101 -13 119 -5 25 -3 32 9 32 13 0 59 -81 94 -167 64 -158 110 -205 228 -234 103 -24 203 -15 345 31 166 55 295 163 363 303 37 76 38 81 36 175 -5 197 -2 266 15 306 22 53 22 201 -1 258 -51 129 -278 457 -549 793 -112 140 -178 228 -237 317 -56 86 -127 217 -127 236 0 5 -7 23 -15 38 -8 16 -15 37 -15 46 0 9 -7 43 -16 75 -21 80 -21 266 0 315 32 75 16 227 -34 329 -6 10 -14 27 -19 37 -33 68 -64 123 -72 128 -5 3 -9 17 -9 32 0 20 19 46 68 97 38 39 122 129 187 200 66 72 131 142 145 156 29 31 98 104 195 209 75 81 293 316 310 334 6 6 71 76 145 156 147 159 222 239 260 279 14 14 52 55 85 91 45 51 258 279 320 344 6 6 64 70 130 141 65 72 121 132 124 135 26 22 41 49 32 55 -6 3 -14 -1 -17 -9z" />
+            </g>
+          </svg>
         </div>
-        <div className="border-[1px] p-1 ">Licorne Labs</div>
+        <div className="p-1">
+          <span className="font-medium">licorne</span>
+          {""}
+          <span className="font-thin">labs</span>
+        </div>
       </a>
 
       <RxHamburgerMenu
         className={
-          "HAMBURGER flex-0 ml-10 transition-all duration-500 ease-in-out md:hidden " +
+          "HAMBURGER flex-1  ml-10 transition-all duration-500 ease-in-out md:hidden " +
           (isMenuOpen ? "rotate-90 " : "rotate-0 ")
         }
         size="32px"
@@ -103,12 +68,17 @@ const Header = () => {
             {" "}
             Pricing
           </a>
-          <a href="/Blog" className="px-10 hover:underline hidden md:block">
+          <a href="/#contact" className="px-10 hover:underline hidden md:block">
+            {" "}
+            Contactez-nous
+          </a>
+          {/* <a href="/Blog" className="px-10 hover:underline hidden md:block">
             {" "}
             Blog
-          </a>
+          </a> */}
         </ul>
       </nav>
+      <Menu isMenuOpen={isMenuOpen} handleHamburger={handleHamburger} />
     </header>
   );
 };

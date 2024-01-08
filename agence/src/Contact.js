@@ -1,6 +1,6 @@
 const Contact = ({ plan }) => {
   return (
-    <div className="CONTACT text-center py-8 pt-24">
+    <div id="contact" className="CONTACT text-center py-8 pt-24 ">
       <h2 className="text-2xl font-bold mb-8">Contactez-nous</h2>
       <form className="border rounded ">
         <label htmlFor="fname">Prénom:</label>

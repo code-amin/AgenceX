@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer id="sitemap" className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex flex-col items-center">
+    <footer id="footer" className="bg-gray-800 text-white p-4">
+      <div className="container mx-auto flex flex-col items-centzer">
         <div className="mb-4">
           <p>&copy; 2024 🦄 Licorne Labs </p>
         </div>

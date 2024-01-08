@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Hero from "./Hero";
-import Blog from "./Blog";
+// import Blog from "./Blog";
 import Realizations from "./Realizations";
 import Services from "./Services";
 import Arguments from "./Arguments";
@@ -32,7 +32,7 @@ const App = () => {
       <Contact plan={plan} />
       <Socials />
       <Footer />
-      <Blog />
+      {/* <Blog /> */}
     </div>
   );
 };
