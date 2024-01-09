@@ -2,6 +2,7 @@ import { FaHeadphones, FaSearch, FaLightbulb, FaCogs, FaChartLine } from "react-
 
 const Services = () => {
   return (
+    // Manque header + couleur + Block vide pour avoir meilleur presentation 
     <div id="services" className="py-10 bg-gray-900 pt-24">
       <div className="container mx-auto flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center space-y-4">

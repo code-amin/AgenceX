@@ -30,21 +30,31 @@ const Hero = () => {
 
 
   return (
-    <div className="bg-gray-900 text-white pt-20 md:py-20 flex flex-col md:flex-row items-center">
-      <div className="max-w-md mx-auto md:max-w-none md:w-1/2 md:order-2 md:ml-auto md:mr-0">
-      <animated.div
-        style={{
-          ...dropAnimation,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <FcIdea className={` w-20 md:w-32 lg:w-40 h-20 md:h-32 lg:h-40 ${
-            showColors ? 'grayscale-0' :'grayscale-[50%]'
-          }`} size={600} style={{ margin: "0 auto" }}  />
+    <div className="bg-gray-900 text-white pt-20 md:py-25 flex flex-col md:flex-row items-center">
+      <div className="max-w-md mx-auto md:max-w-none md:w-1/2 lg:w-full md:order-2 md:ml-auto md:mr-0">
+        <animated.div
+          style={{
+            ...dropAnimation,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+                }}
+        >
+          <FcIdea
+  className={`w-20 md:w-auto lg:w-auto xl:w-auto h-20 md:h-auto lg:h-auto xl:h-auto ${
+    showColors ? 'grayscale-0' : 'grayscale-[70%]'
+  }`}
+  style={{
+    width: '300px',
+    height: '500px',
+  }}
+/>
+
+
         </animated.div>
       </div>
+
+
       <div className="max-w-md mx-auto md:max-w-none md:w-1/2 md:order-1">
         <div className="p-4">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-8">
