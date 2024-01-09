@@ -1,14 +1,14 @@
 const Arguments = () => {
   return (
     <div id="arguments">
-      <h2 className="text-2xl font-bold text-center mb-4">
+      <h2 className="text-3xl font-bold text-center mb-4">
         Why work with the 🦄 Lab{" "}
       </h2>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <div className="bg-gray-800 p-6 rounded-lg">
-          <p className="text-white-500 text-xl mb-4">
+          <h3 className="text-white-500 text-2xl mb-4">
             Our Expertise and Innovation:
-          </p>
+          </h3>
           <p className="text-white-500 text-sm mb-4">
             At Licorne Labs, we bring a wealth of expertise to your project. Our
             seasoned development team is well-versed in the latest technologies,
@@ -18,9 +18,9 @@ const Arguments = () => {
           </p>
         </div>
         <div className="bg-gray-800 p-6 rounded-lg">
-          <p className="text-white-500 text-xl mb-4">
+          <h3 className="text-2xl text-white-500 mb-4">
             Tailored Solutions for Your Success
-          </p>
+          </h3>
           <p className="text-white-500 text-sm mb-4">
             We take the time to understand your unique needs and business goals.
             At Licorne Labs we pride ourselves on crafting tailored web
@@ -32,9 +32,9 @@ const Arguments = () => {
           </p>
         </div>
         <div className="bg-gray-800 p-6 rounded-lg">
-          <p className="text-white-500 text-xl mb-4">
+          <h3 className="text-2xl text-white-500 mb-4">
             Exceptional Support and Collaboration{" "}
-          </p>
+          </h3>
           <p className="text-white-500 text-sm mb-4">
             Experience a client-centric journey with Licorne Labs. Our
             commitment to exceptional customer support means you're not just a

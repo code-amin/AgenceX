@@ -1,7 +1,7 @@
 const Realizations = () => {
   return (
     <div id="realizations" className="bg-gray-900 text-white pt-24">
-      <h2 className="text-2xl font-bold text-center mb-4">Réalisations </h2>
+      <h2 className="text-4xl font-bold text-center mb-4">Réalisations </h2>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <div className="bg-gray-800 p-6 rounded-lg">
           <p className="text-white-500 mb-4">

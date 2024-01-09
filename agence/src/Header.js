@@ -9,10 +9,10 @@ const Header = () => {
   };
 
   return (
-    <header className="HEADER font-MyFont items-center w-full py-4 text-2xl fixed flex bg-gray-800 shadow-lg transition-transform top-0 left-0">
+    <header className="HEADER font-MyFont items-center w-full py-4 text-2xl fixed flex bg-gray-800 shadow-lg transition-transform top-0 left-0 justify-between ">
       <div className="flex-1 md:hidden"></div>
-      <a href="/" className="flex items-center">
-        <div className="LOGO p-1 ">
+      <a href="/" className="flex items-center pl-[3vw]">
+        <div className="LOGO py-1 ">
           {/* animation:transform hover:rotate-[-360deg] transition-transform origin-center duration-700  hover:fill-current hover:text-pink-200*/}
           <svg
             version="1.0"
@@ -31,7 +31,7 @@ const Header = () => {
             </g>
           </svg>
         </div>
-        <div className="p-1">
+        <div className="p-1 text-4xl">
           <span className="font-medium">licorne</span>
           {""}
           <span className="font-thin">labs</span>
@@ -46,36 +46,23 @@ const Header = () => {
         size="32px"
         onClick={handleHamburger}
       />
-      <nav className="NAVBAR">
-        <ul className="flex">
-          <li>
-            <a
-              href="/#realizations"
-              className="px-10 hover:underline hidden md:block"
-            >
-              {" "}
-              Realizations
-            </a>
+      <nav className="NAVBAR pr-[3vw]">
+        <ul className="flex md:w-[40vw] md:justify-evenly">
+          <li className="hover:underline hidden md:block">
+            <a href="/#realizations">Réalisations</a>
           </li>
-          <a
-            href="/#services"
-            className="px-10 hover:underline hidden md:block"
-          >
-            {" "}
-            Services
-          </a>
-          <a href="/#pricing" className="px-10 hover:underline hidden md:block">
-            {" "}
-            Pricing
-          </a>
-          <a href="/#contact" className="px-10 hover:underline hidden md:block">
-            {" "}
-            Contactez-nous
-          </a>
-          {/* <a href="/Blog" className="px-10 hover:underline hidden md:block">
-            {" "}
-            Blog
-          </a> */}
+
+          <li className="hover:underline hidden md:block pl-3">
+            <a href="/#services">Services</a>
+          </li>
+
+          <li className="hover:underline hidden md:block pl-3">
+            <a href="/#pricing">Tarification</a>
+          </li>
+
+          <li className="hover:underline hidden md:block pl-3">
+            <a href="/#contact">Contact</a>
+          </li>
         </ul>
       </nav>
       <Menu isMenuOpen={isMenuOpen} handleHamburger={handleHamburger} />
