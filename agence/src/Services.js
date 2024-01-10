@@ -1,42 +1,46 @@
-import { FaHeadphones, FaSearch, FaLightbulb, FaCogs, FaChartLine } from "react-icons/fa";
+
 
 const Services = () => {
   return (
-    // Manque header + couleur + Block vide pour avoir meilleur presentation 
-    <div id="services" className="py-10 bg-gray-900 pt-24">
-      <div className="container mx-auto flex flex-col items-center space-y-8">
-        <div className="flex flex-col items-center space-y-4">
-          <div className="icon-container">
-            <FaHeadphones size={80} className="icon text-white border border-white rounded-full p-3" />
+    <section className=" py-12">
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-8">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Custom app development */}
+          <div className="p-6 shadow-lg rounded-lg relative">
+            <h3 className="text-xl font-semibold mb-4 relative">Custom App Development
+              <span className="absolute left-0 bottom-[-0.55556rem] bg-[#e7e729] rounded-[0.11111rem] content-[''] h-[0.22222rem] transition-all duration-250 ease w-[1.83333rem]"></span>
+            </h3> 
           </div>
-          <p className="text-center text-white">Écoute attentive pour cerner les besoins spécifiques.</p>
-        </div>
-        <div className="flex flex-col items-center space-y-4">
-          <div className="icon-container">
-            <FaSearch size={80} className="icon text-white border border-white rounded-full p-3" />
+          {/* Product design (UX/UI) */}
+          <div className="p-6  shadow-lg rounded-lg relative">
+            <h3 className="text-xl font-semibold mb-4 relative">Product Design (UX/UI)
+            <span className="absolute left-0 bottom-[-0.55556rem] bg-[#e7e729] rounded-[0.11111rem] content-[''] h-[0.22222rem] transition-all duration-250 ease w-[1.83333rem]"></span>
+            </h3>
           </div>
-          <p className="text-center text-white">Examen minutieux de la situation, concurrents, opportunités.</p>
-        </div>
-        <div className="flex flex-col items-center space-y-4">
-          <div className="icon-container">
-            <FaLightbulb size={80} className="icon text-white border border-white rounded-full p-3" />
+          <div className="p-6  shadow-lg rounded-lg relative">
+            <h3 className="text-xl font-semibold mb-4 relative">Web Development
+            <span className="absolute left-0 bottom-[-0.55556rem] bg-[#e7e729] rounded-[0.11111rem] content-[''] h-[0.22222rem] transition-all duration-250 ease w-[1.83333rem]"></span>
+            </h3>
           </div>
-          <p className="text-center text-white">Développement stratégique adapté à vos besoins et marché.</p>
-        </div>
-        <div className="flex flex-col items-center space-y-4">
-          <div className="icon-container">
-            <FaCogs size={80} className="icon text-white border border-white rounded-full p-3" />
+          <div className="p-6  shadow-lg rounded-lg relative">
+            <h3 className="text-xl font-semibold mb-4 relative">eCommerce solutions
+            <span className="absolute left-0 bottom-[-0.55556rem] bg-[#e7e729] rounded-[0.11111rem] content-[''] h-[0.22222rem] transition-all duration-250 ease w-[1.83333rem]"></span>
+            </h3>
           </div>
-          <p className="text-center text-white">Mise en œuvre précise des solutions convenues.</p>
-        </div>
-        <div className="flex flex-col items-center space-y-4">
-          <div className="icon-container">
-            <FaChartLine size={80} className="icon text-white border border-white rounded-full p-3" />
+          <div className="p-6  shadow-lg rounded-lg relative">
+            <h3 className="text-xl font-semibold mb-4 relative">SEO optimization
+            <span className="absolute left-0 bottom-[-0.55556rem] bg-[#e7e729] rounded-[0.11111rem] content-[''] h-[0.22222rem] transition-all duration-250 ease w-[1.83333rem]"></span>
+            </h3>
           </div>
-          <p className="text-center text-white">Analyse, ajustement pour une croissance constante et efficace.</p>
+          <div className="p-6  shadow-lg rounded-lg relative">
+            <h3 className="text-xl font-semibold mb-4 relative">Automatisation
+            <span className="absolute left-0 bottom-[-0.55556rem] bg-[#e7e729] rounded-[0.11111rem] content-[''] h-[0.22222rem] transition-all duration-250 ease w-[1.83333rem]"></span>
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
