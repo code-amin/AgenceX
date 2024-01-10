@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="HEADER font-MyFont items-center w-full py-4 md:text-2xl lg:text-3xl fixed flex bg-gray-800 shadow-2xl transition-transform top-0 left-0 justify-between">
+    <header className="HEADER font-MyFont items-center w-full py-4 md:text-2xl lg:text-3xl fixed flex z-50 bg-gray-800 shadow-2xl transition-transform top-0 left-0 justify-between">
       <div className="flex-1 md:hidden"></div>
       <a href="/" className="flex items-center pl-[3vw] ">
         <div className="LOGO py-1 ">
