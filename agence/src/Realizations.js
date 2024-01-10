@@ -1,35 +1,74 @@
+import CardTag from "./CardTag";
+
 const Realizations = () => {
   return (
-    <div id="realizations" className="bg-gray-900 text-white pt-24">
-      <h2 className="text-4xl font-bold text-center mb-4">Réalisations </h2>
-      <div className="flex flex-col md:flex-row gap-4 justify-center">
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <p className="text-white-500 mb-4">
-            Website for a digital analytics coach
+    <div id="realizations" className="bg-gray-900 text-white pt-24 ">
+      <h2 className="text-4xl font-bold text-center mb-4">Réalisations</h2>
+      <div
+        id="cardsWrapper"
+        className="flex flex-col md:flex-row gap-4 md:fldex-wrap justify-center justify "
+      >
+        <div
+          id="card"
+          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-2"
+        >
+          <h3 className="rounded-xl text-2xl font-bold mb-2">
+            PWR Vision <span className="bg-white rounded-lg px-1">🕶️</span>
+          </h3>
+          <p className=" mb-4 min-h-[75px]">
+            Commerce en ligne Shopify pour vente d'accessoires oculaires.
           </p>
           <img
-            className="rounded-xl"
-            src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/0d373b57e250525e2556015c5ad6fe84f66f2f632357a97c5de6e73043c0e0d51628682335902.jpg"
+            className="rounded-xl mb-4 max-h-[200px] w-fit object-cover object-top "
+            src="https://s3.amazonaws.com/i.snag.gy/c6nGRr.jpg"
           />{" "}
+          <div className="flex flex-wrap">
+            <CardTag text={"#eCommerce"} />
+            <CardTag text={"#Branding"} />
+            <CardTag text={"#CSS"} />
+          </div>
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <p className="text-white-500 mb-4">
-            Payment processor for an e-commerce{" "}
+        <div
+          id="card"
+          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-1"
+        >
+          <h3 className="rounded-xl text-2xl font-bold mb-2">
+            ReachOut <span className="bg-white rounded-lg px-1">🩺</span>
+          </h3>
+          <p className=" mb-4 min-h-[75px]">
+            Application web pour un organisme qui promouvois la santé physique
+            et mentale.
           </p>
           <img
-            className="rounded-xl"
-            src="https://bootstrapmade.com/content/templatefiles/Arsha/Arsha-bootstrap-website-template-md.webp"
+            className="rounded-xl mb-4 h-[200px] object-cover object-left "
+            src="https://user-images.githubusercontent.com/105254146/197800267-0e7b76d7-5bec-402f-9ee1-601efff82228.png"
           />{" "}
+          <div className="flex flex-wrap">
+            <CardTag text={"#HealthTech"} />
+            <CardTag text={"#React"} />
+            <CardTag text={"#API"} />
+          </div>
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <p className="text-white-500 mb-4">
-            Responsiveness for a website and SEO ranking{" "}
+        <div
+          id="card"
+          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-3"
+        >
+          <h3 className="rounded-xl text-2xl font-bold mb-2">Go Finance 📈</h3>
+          <p className=" mb-4 min-h-[75px]">
+            Application web frontale et dorsale pour suivre ses titres et
+            nouvelles boursières.
           </p>
           <img
-            className="rounded-xl"
-            src="https://themewagon.com/wp-content/uploads/2022/03/screencapture-technext-github-io-startup2-index-html-2022-03-07-10_56_37-1.png"
-          />
-        </div>
+            className="rounded-xl mb-4 h-[200px] object-cover object-top w-fit"
+            src="https://user-images.githubusercontent.com/73975219/196069436-e6f9ef5c-737c-44eb-a47a-f1aa8cf83f15.png"
+          />{" "}
+          <div className="flex flex-wrap">
+            <CardTag text={"#FinTech"} />
+            <CardTag text={"#JS"} />
+            <CardTag text={"#MongoDB"} />
+            <CardTag text={"#Rest"} />
+          </div>
+        </div>{" "}
       </div>
     </div>
   );
