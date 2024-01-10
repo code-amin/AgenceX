@@ -6,11 +6,11 @@ const Realizations = () => {
       <h2 className="text-4xl font-bold text-center mb-4">Réalisations</h2>
       <div
         id="cardsWrapper"
-        className="flex flex-col md:flex-row gap-4 md:fldex-wrap justify-center justify "
+        className="flex flex-col md:flex-row gap-4 lg:gap-10 justify-center  "
       >
         <div
           id="card"
-          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-2"
+          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-2 lg:max-w-[450px] "
         >
           <h3 className="rounded-xl text-2xl font-bold mb-2">
             PWR Vision <span className="bg-white rounded-lg px-1">🕶️</span>
@@ -30,7 +30,7 @@ const Realizations = () => {
         </div>
         <div
           id="card"
-          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-1"
+          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-1  lg:max-w-[450px]"
         >
           <h3 className="rounded-xl text-2xl font-bold mb-2">
             ReachOut <span className="bg-white rounded-lg px-1">🩺</span>
@@ -51,7 +51,7 @@ const Realizations = () => {
         </div>
         <div
           id="card"
-          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-3"
+          className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-3  lg:max-w-[450px]"
         >
           <h3 className="rounded-xl text-2xl font-bold mb-2">Go Finance 📈</h3>
           <p className=" mb-4 min-h-[75px]">
