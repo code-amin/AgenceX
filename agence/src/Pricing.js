@@ -4,27 +4,27 @@ const Pricing = ({ onSelectPlan, plan }) => {
   };
 
   const basic = {
-    name: "Basic",
+    name: "De base",
     price: "29$",
     pages: "5 pages",
-    support: "Basic Support",
-    features: "Limited Features",
+    support: "Support de base",
+    features: "Fonctionnalités limitées",
     fr: "Plan de base - 29$",
   };
   const standard = {
     name: "Standard",
     price: "59$",
     pages: "10 pages",
-    support: "Standard Support",
-    features: "More Features",
+    support: "Support Standard ",
+    features: "Plus de fonctionnalités",
     fr: "Plan Standard - 59$",
   };
   const premium = {
     name: "Premium",
     price: "99$",
-    pages: "Unlimited pages",
-    support: "Priority Support",
-    features: "Advanced Features",
+    pages: "Nombre de pages illimité",
+    support: "Support prioritaire",
+    features: "Fonctionnalités avancées",
     fr: "Plan Premium - 99$",
   };
   return (
@@ -53,7 +53,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{basic.features}</li>
             </ul>
             <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-              Get Started
+              Démarrer
             </button>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{standard.features}</li>
             </ul>
             <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-              Get Started
+            Démarrer
             </button>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{premium.features}</li>
             </ul>
             <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-              Get Started
+              Démarrer
             </button>
           </div>
         </div>

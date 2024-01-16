@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react
 const Socials = () => {
   return (
     <div className="bg-gray-900 text-white py-8">
-      <h2 className="text-2xl font-bold text-center mb-8">Follow Us</h2>
+      <h2 className="text-2xl font-bold text-center mb-8">Suivez-nous</h2>
       <div className="flex justify-center">
         <a href="https://www.facebook.com/LicorneLabs" target="_blank" className="text-yellow-500 hover:text-yellow-400 mx-4 text-4xl">
           <FaFacebook />
