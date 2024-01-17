@@ -1,8 +1,8 @@
 import React from "react";
+const { REACT_APP_FORMSPREE_KEY } = process.env;
 
 const Contact = ({ plan }) => {
-  // add .env react variable in brackets 👇
-  const formSpreeEndpoint = "";
+  const formSpreeEndpoint = REACT_APP_FORMSPREE_KEY;
 
   const checkPlaceholder = () => {
     const input = document.getElementById("plan");
@@ -13,6 +13,7 @@ const Contact = ({ plan }) => {
 
   return (
     <form
+      id="contact"
       action={formSpreeEndpoint}
       method="POST"
       className="max-w-3xl mx-auto bg-white rounded-lg p-4 text-black"
