@@ -1,37 +1,79 @@
-const Contact = ({ plan }) => {
-  return (
-    <div id="contact" className="CONTACT text-center py-8 pt-24 ">
-      <h2 className="text-2xl font-bold mb-8">Contactez-nous</h2>
-      <form className=" border rounded ">
-        <div className="md:flex text-left">
-          <label htmlFor="fname">Prénom:</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            className="text-black rounded-sm m-1"
-          />
+import React from "react";
 
-          <label htmlFor="fname">Nom:</label>
-          <input type="text" id="fname" name="fname" className="text-black" />
-        </div>
-        <div className="">
-          <label htmlFor="lname">Sujet:</label>
+const Contact = ({ plan }) => {
+  // add .env react variable in brackets 👇
+  const formSpreeEndpoint = "";
+
+  const checkPlaceholder = () => {
+    const input = document.getElementById("plan");
+    if (input.value === "") {
+      input.value = plan;
+    }
+  };
+
+  return (
+    <form
+      action={formSpreeEndpoint}
+      method="POST"
+      className="max-w-3xl mx-auto bg-white rounded-lg p-4 text-black"
+    >
+      <h2 className="text-3xl font-bold mb-4 text-center">Contactez-nous</h2>
+      <div className="my-4">
+        <div className="flex flex-nowrap gap-4">
           <input
-            className="text-gray-400 text-normal text-italic italic"
             type="text"
-            id="plan"
-            name="plan"
-            placeholder={`${plan}`}
+            id="firstName"
+            name="firstName"
+            required
+            placeholder="Prénom"
+            className="p-2 w-full md:w-1/2 border rounded-md"
+            title="Entrez un prénom."
+          />
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            placeholder="Nom"
+            className="p-2 w-full md:w-1/2 border rounded-md"
+            title="Entrez un nom de famille."
           />
         </div>
         <input
-          type="submit"
-          className=" mx-auto bg-yellow-500 text-white py-2 px-4 my-4 rounded-md hover:bg-yellow-400"
-          value="Soumettre"
+          type="text"
+          id="contactInfo"
+          name="contactInfo"
+          required
+          placeholder="Courriel ou numéro de tel."
+          className="mt-1 p-2 w-full border rounded-md"
+          pattern="^(?:\d{10}|\w+@\w+\.\w{2,3})$"
+          title="Entrez un courriel ou numéro de tél."
         />
-      </form>
-    </div>
+        <input
+          type="text"
+          id="plan"
+          name="plan"
+          required
+          placeholder={`${plan}`}
+          className="mt-1 p-2 w-full border rounded-md"
+        />
+        <textarea
+          type="text"
+          id="comment"
+          name="comment"
+          placeholder="Commentaire, question..."
+          className="mt-1 p-2 w-full border rounded-md resize-both overflow-auto"
+        />
+      </div>
+
+      <button
+        type="submit"
+        className="bg-yellow-500 text-white p-2 rounded-md"
+        onClick={checkPlaceholder}
+      >
+        Soumettre
+      </button>
+    </form>
   );
 };
 
