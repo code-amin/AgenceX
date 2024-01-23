@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = ({ plan }) => {
+  const navigate = useNavigate();
+
   const checkPlaceholder = () => {
     const input = document.getElementById("plan");
     if (input.value === "") {
@@ -8,12 +11,30 @@ const Contact = ({ plan }) => {
     }
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <form
       id="contact"
       method="POST"
       className="max-w-3xl mx-auto bg-white rounded-lg p-4 text-black"
+      name="clientForm"
+      onSubmit={handleSubmit}
     >
+      <input type="hidden" name="form-name" value="clientForm" />
+
       <h2 className="text-3xl font-bold mb-4 text-center">Contactez-nous</h2>
       <div className="my-4">
         <div className="flex flex-nowrap gap-4">
@@ -37,6 +58,7 @@ const Contact = ({ plan }) => {
           />
         </div>
         <input
+          minLength="4"
           type="text"
           id="contactInfo"
           name="contactInfo"

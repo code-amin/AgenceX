@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Socials from "./Socials";
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   const [plan, setPlan] = useState("Besoin d'innovation...");
@@ -20,20 +21,22 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white px-[3vw]">
-      <Header />
-      <Hero />
-      <Realizations />
-      <Services />
-      <Arguments />
-      <Reviews />
-      {/* <Process /> */}
-      <Pricing onSelectPlan={handlePlanSelection} plan={plan} />
-      <Contact plan={plan} />
-      <Socials />
-      <Footer />
-      {/* <Blog /> */}
-    </div>
+    <Router>
+      <div className="bg-gray-900 text-white px-[3vw]">
+        <Header />
+        <Hero />
+        <Realizations />
+        <Services />
+        <Arguments />
+        <Reviews />
+        {/* <Process /> */}
+        <Pricing onSelectPlan={handlePlanSelection} plan={plan} />
+        <Contact plan={plan} />
+        <Socials />
+        <Footer />
+        {/* <Blog /> */}
+      </div>
+    </Router>
   );
 };
 
