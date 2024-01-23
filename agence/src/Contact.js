@@ -21,6 +21,7 @@ const Contact = ({ plan }) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
+      .then(() => console.log(formData))
       .then(() => navigate("/thank-you/"))
       .catch((error) => alert(error));
   };
