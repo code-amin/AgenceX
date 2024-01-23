@@ -48,7 +48,7 @@ const Contact = ({ plan }) => {
             className="p-2 w-full md:w-1/2 border rounded-md"
             title="Entrez un prénom."
           />
-          <input
+          {/* <input
             type="text"
             id="lastName"
             name="lastName"
@@ -56,9 +56,9 @@ const Contact = ({ plan }) => {
             placeholder="Nom"
             className="p-2 w-full md:w-1/2 border rounded-md"
             title="Entrez un nom de famille."
-          />
+          /> */}
         </div>
-        <input
+        {/* <input
           minLength="4"
           type="text"
           id="contactInfo"
@@ -68,15 +68,15 @@ const Contact = ({ plan }) => {
           className="mt-1 p-2 w-full border rounded-md"
           pattern="^(?:\d{10}|\w+@\w+\.\w{2,3})$"
           title="Entrez un courriel ou numéro de tél."
-        />
-        <input
+        /> */}
+        {/* <input
           type="text"
           id="plan"
           name="plan"
           required
           placeholder={`${plan}`}
           className="mt-1 p-2 w-full border rounded-md"
-        />
+        /> */}
         <textarea
           type="text"
           id="comment"
