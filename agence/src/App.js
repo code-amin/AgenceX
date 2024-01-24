@@ -10,6 +10,7 @@ import Pricing from "./Pricing";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Socials from "./Socials";
+import Thanks from "./Thanks";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -34,6 +35,9 @@ const App = () => {
         <Contact plan={plan} />
         <Socials />
         <Footer />
+        <Routes>
+          <Route path="/thank-you" element={<Thanks />} />
+        </Routes>
         {/* <Blog /> */}
       </div>
     </Router>

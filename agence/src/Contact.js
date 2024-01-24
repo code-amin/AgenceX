@@ -66,7 +66,7 @@ const Contact = ({ plan }) => {
           required
           placeholder="Courriel ou numéro de tel."
           className="mt-1 p-2 w-full border rounded-md"
-          pattern="^(?:\d{10}|\w+@\w+\.\w{2,3})$"
+          pattern="^([0-9]{10})|([0-9]{3}\+\-[0-9]{3}\+\-[0-9]{3})|([A-Za-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,5})$"
           title="Entrez un courriel ou numéro de tél."
         />
         <input

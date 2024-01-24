@@ -21,6 +21,7 @@ const Realizations = () => {
           <img
             className="rounded-xl mb-4 max-h-[200px] w-fit object-cover object-top "
             src="https://s3.amazonaws.com/i.snag.gy/c6nGRr.jpg"
+            alt="A mobile ecommerce site"
           />{" "}
           <div className="flex flex-wrap">
             <CardTag text={"#eCommerce"} />
@@ -42,6 +43,7 @@ const Realizations = () => {
           <img
             className="rounded-xl mb-4 h-[200px] object-cover object-left "
             src="https://user-images.githubusercontent.com/105254146/197800267-0e7b76d7-5bec-402f-9ee1-601efff82228.png"
+            alt="A mental health website"
           />{" "}
           <div className="flex flex-wrap">
             <CardTag text={"#HealthTech"} />
@@ -61,6 +63,7 @@ const Realizations = () => {
           <img
             className="rounded-xl mb-4 h-[200px] object-cover object-top w-fit"
             src="https://user-images.githubusercontent.com/73975219/196069436-e6f9ef5c-737c-44eb-a47a-f1aa8cf83f15.png"
+            alt="A finance web application"
           />{" "}
           <div className="flex flex-wrap">
             <CardTag text={"#FinTech"} />
