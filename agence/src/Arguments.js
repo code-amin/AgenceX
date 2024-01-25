@@ -7,7 +7,7 @@ const Arguments = () => {
       </h2>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-fuchsia-500 text-2xl mb-4">
+          <h3 className="text-white-500 text-2xl mb-4">
             L'Innovation est notre raison d'être.
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
