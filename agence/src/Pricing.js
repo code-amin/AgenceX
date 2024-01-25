@@ -4,7 +4,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
   };
 
   const basic = {
-    name: "De base",
+    name: "Base",
     price: "299$",
     pages: "1 page",
     support: "Support de base",
@@ -44,8 +44,10 @@ const Pricing = ({ onSelectPlan, plan }) => {
             handlePlan(basic.fr);
           }}
         >
-          <div className="py-6 px-4 hover:cursor-pointer text-center" >
-            <h3 className="text-lg font-semibold text-center mb-4">{basic.name}</h3>
+          <div className="py-6 px-4 hover:cursor-pointer text-center">
+            <h3 className="text-lg font-semibold text-center mb-4">
+              {basic.name}
+            </h3>
             <p className="text-2xl font-bold text-center mb-4">{basic.price}</p>
             <ul className="text-sm">
               <li className="mb-2">{basic.pages}</li>
@@ -69,16 +71,20 @@ const Pricing = ({ onSelectPlan, plan }) => {
             handlePlan(standard.fr);
           }}
         >
-          <div className="py-6 px-4 hover:cursor-pointer text-center" >
-            <h3 className="text-lg font-semibold text-center mb-4">{standard.name}</h3>
-            <p className="text-2xl font-bold text-center mb-4">{standard.price}</p>
+          <div className="py-6 px-4 hover:cursor-pointer text-center">
+            <h3 className="text-lg font-semibold text-center mb-4">
+              {standard.name}
+            </h3>
+            <p className="text-2xl font-bold text-center mb-4">
+              {standard.price}
+            </p>
             <ul className="text-sm">
               <li className="mb-2">{standard.pages}</li>
               <li className="mb-2">{standard.support}</li>
               <li className="mb-2">{standard.features}</li>
             </ul>
             <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-            Démarrer
+              Démarrer
             </button>
           </div>
         </div>
@@ -94,9 +100,13 @@ const Pricing = ({ onSelectPlan, plan }) => {
             handlePlan(premium.fr);
           }}
         >
-          <div className="py-6 px-4 hover:cursor-pointer text-center" >
-            <h3 className="text-lg font-semibold text-center mb-4">{premium.name}</h3>
-            <p className="text-2xl font-bold text-center mb-4">{premium.price}</p>
+          <div className="py-6 px-4 hover:cursor-pointer text-center">
+            <h3 className="text-lg font-semibold text-center mb-4">
+              {premium.name}
+            </h3>
+            <p className="text-2xl font-bold text-center mb-4">
+              {premium.price}
+            </p>
             <ul className="text-sm">
               <li className="mb-2">{premium.pages}</li>
               <li className="mb-2">{premium.support}</li>

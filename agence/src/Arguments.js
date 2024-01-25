@@ -1,13 +1,17 @@
 const Arguments = () => {
   return (
     <div id="arguments">
-      <h2 className="font-bold text-center mb-4 text-3xl lg:text-4xl">
-        Pourquoi choisir <span className="font-medium">Licorne</span>
-        <span className="font-thin">Labs</span> 🦄
+      <h2 className=" text-center mb-4 text-3xl lg:text-4xl">
+        Pourquoi choisir <span className="font-medium">licorne</span>
+        <span className="font-thin">labs</span> 🦄
       </h2>
+      <div className="p-1 text-3xl lg:text-4xl">
+        <span className="font-medium">licorne</span>
+        <span className="font-thin">labs</span>
+      </div>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-fuchsia-500 text-2xl mb-4">
+          <h3 className="hover:text-fuchsia-500 transition text-2xl mb-4">
             L'Innovation est notre raison d'être.
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">

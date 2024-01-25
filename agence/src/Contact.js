@@ -30,7 +30,7 @@ const Contact = ({ plan }) => {
     <form
       id="contact"
       method="POST"
-      className="max-w-3xl mx-auto bg-white rounded-lg p-4 text-black"
+      className="max-w-3xl mt-24 mx-auto bg-white rounded-lg p-4 text-black"
       name="clientForm"
       onSubmit={handleSubmit}
     >
