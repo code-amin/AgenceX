@@ -29,10 +29,13 @@ const Realizations = () => {
             <CardTag text={"#CSS"} />
           </div>
         </div>
+        
         <div
           id="card"
           className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-1  lg:max-w-[450px]"
         >
+          <a href="https://github.com/MhammedDoukkali/ReachOut" target="_blank">
+          
           <h3 className="rounded-xl text-2xl font-bold mb-2">
             ReachOut <span className="bg-white rounded-lg px-1">🩺</span>
           </h3>
@@ -50,7 +53,9 @@ const Realizations = () => {
             <CardTag text={"#React"} />
             <CardTag text={"#API"} />
           </div>
+          </a>
         </div>
+        
         <div
           id="card"
           className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-3  lg:max-w-[450px]"

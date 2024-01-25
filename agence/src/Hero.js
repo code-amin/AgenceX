@@ -62,11 +62,11 @@ const Hero = () => {
       <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-8">
         Donnez vie à vos idées avec des solutions technologiques innovantes
       </h1>
-      <p className="text-base md:text-xl lg:text-2xl leading-relaxed">
+      {/* <p className="text-base md:text-xl lg:text-2xl leading-relaxed">
         Propulsez votre entreprise vers demain grâce à nos solutions évolutives et adaptées.
         Notre agence offre des solutions personnalisées adaptées à vos besoins spécifiques,
         offrant ainsi des réponses concrètes à vos défis numériques.
-      </p>
+      </p> */}
     </div>
   </div>
 </div>

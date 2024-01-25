@@ -16,7 +16,7 @@ const Reviews = () => {
           <p className="text-yellow-500 ml-2">
             "Fantastic service! Highly recommended!"
           </p>
-          <p className="text-sm ml-2">- John Doe</p>
+          <p className="text-sm ml-2">- Alexandre Bolduc</p>
         </div>
         <div className="bg-gray-800 p-6 rounded-lg flex items-center flex-col">
           <div className="flex items-center">
@@ -30,7 +30,7 @@ const Reviews = () => {
           <p className="text-yellow-500 ml-2">
             "Great experience working with this agency."
           </p>
-          <p className="text-sm ml-2">- Jane Smith</p>
+          <p className="text-sm ml-2">- Mélodie Demers</p>
         </div>
         <div className="bg-gray-800 p-6 rounded-lg flex items-center flex-col">
           <div className="flex items-center">

@@ -5,27 +5,27 @@ const Pricing = ({ onSelectPlan, plan }) => {
 
   const basic = {
     name: "De base",
-    price: "29$",
-    pages: "5 pages",
+    price: "299$",
+    pages: "1 page",
     support: "Support de base",
     features: "Fonctionnalités limitées",
-    fr: "Plan de base - 29$",
+    fr: "Plan de base - 299$",
   };
   const standard = {
     name: "Standard",
-    price: "59$",
-    pages: "10 pages",
+    price: "499$",
+    pages: "5 pages",
     support: "Support Standard ",
     features: "Plus de fonctionnalités",
-    fr: "Plan Standard - 59$",
+    fr: "Plan Standard - 499$",
   };
   const premium = {
     name: "Premium",
-    price: "99$",
+    price: "Contactez-nous",
     pages: "Nombre de pages illimité",
     support: "Support prioritaire",
     features: "Fonctionnalités avancées",
-    fr: "Plan Premium - 99$",
+    fr: "Plan Premium",
   };
   return (
     <div id="pricing" className="bg-gray-900 py-8 pt-24">
