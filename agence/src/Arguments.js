@@ -11,7 +11,7 @@ const Arguments = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="hover:text-fuchsia-500 transition text-2xl mb-4">
+          <h3 className="text-2xl mb-4">
             L'Innovation est notre raison d'être.
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
