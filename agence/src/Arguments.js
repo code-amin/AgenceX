@@ -1,14 +1,14 @@
 const Arguments = () => {
   return (
     <div id="arguments">
-      <h2 className=" text-center mb-4 text-3xl lg:text-4xl">
+      <h2 className=" text-center mb-4 text-3xl lg:text-4xl ">
         Pourquoi choisir <span className="font-medium">licorne</span>
         <span className="font-thin">labs</span> 🦄
       </h2>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-2xl text-white-500 mb-4 bg-gradient-to-r transition-all duration-500 ease-in-out  hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 inline-block rounded-xl p-2 ">
-            L'Innovation est notre raison d'être.
+        <div className="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 className="text-2xl text-white-500 mb-4 inline-block rounded-xl p-2 hover:bg-yellow-500 transition-all ease-in duration-1000">
+            L'innovation est notre raison d'être.
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
             Chez Licorne Labs, nous apportons une richesse d'expertise à votre
@@ -19,9 +19,9 @@ const Arguments = () => {
             pas seulement actuelles, mais à la pointe de la technologie.
           </p> */}
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-2xl text-white-500 mb-4 bg-gradient-to-r transition-all duration-500 ease-in-out hover:from-pink-500 hover:via-indigo-500 to:via-purple-500  inline-block rounded-xl p-2 ">
-            Des Solutions Adaptées pour Votre Réussite
+        <div className="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 className="text-2xl text-white-500 mb-2 inline-block rounded-xl p-2 hover:bg-purple-500 transition-all ease-in duration-1000">
+            Des solutions adaptées pour votre réussite
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
             Nous prenons le temps de comprendre vos besoins uniques et vos
@@ -34,10 +34,10 @@ const Arguments = () => {
             visibilité de la marque.
           </p> */}
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-2xl text-white-500 mb-4 bg-gradient-to-r transition-all duration-500 ease-in-out hover:from-purple-500 hover:via-pink-500 hover:to-indigo-500   inline-block rounded-xl p-2 ">
+        <div className="bg-gray-800 p-6 rounded-lg text-center">
+          <h3 className="text-2xl text-white-500 m-2 inline-block rounded-xl hover:bg-pink-500 transition-all ease-in duration-1000">
             {" "}
-            Un Support Exceptionnel et une Collaboration de Qualité
+            Un support exceptionnel et une collaboration de qualité
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
             Vivez une expérience centrée sur le client avec Licorne Labs. Notre

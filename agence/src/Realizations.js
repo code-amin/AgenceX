@@ -13,7 +13,7 @@ const Realizations = () => {
           className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-2 lg:max-w-[450px] "
         >
           <h3 className="rounded-xl text-2xl font-bold mb-2">
-            PWR Vision <span className="bg-white rounded-lg px-1">🕶️</span>
+            PWR Vision 
           </h3>
           <p className=" mb-4 min-h-[75px]">
             Commerce en ligne Shopify pour vente d'accessoires oculaires.
@@ -38,7 +38,7 @@ const Realizations = () => {
             target="_blank"
           >
             <h3 className="rounded-xl text-2xl font-bold mb-2">
-              ReachOut <span className="bg-white rounded-lg px-1">🩺</span>
+              ReachOut 
             </h3>
             <p className=" mb-4 min-h-[75px]">
               Application web pour un organisme qui promouvois la santé physique
@@ -65,7 +65,7 @@ const Realizations = () => {
             target="_blank"
           >
             <h3 className="rounded-xl text-2xl font-bold mb-2">
-              Go Finance 📈
+              Go Finance 
             </h3>
             <p className=" mb-4 min-h-[75px]">
               Application web frontale et dorsale pour suivre ses titres et

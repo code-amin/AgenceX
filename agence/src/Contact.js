@@ -88,7 +88,7 @@ const Contact = ({ plan }) => {
 
       <button
         type="submit"
-        className="bg-yellow-500 text-white p-2 rounded-md"
+        className="bg-yellow-500 text-white p-2 block mx-auto w-2/5 py-2 px-4 mt-6 rounded-md hover:bg-yellow-400"
         onClick={checkPlaceholder}
       >
         Soumettre

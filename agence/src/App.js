@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 // import Blog from "./Blog";
+import Home from "./Home";
 import Realizations from "./Realizations";
 import Services from "./Services";
 import Arguments from "./Arguments";
@@ -15,30 +16,23 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
-  const [plan, setPlan] = useState("Besoin d'innovation...");
+  // const [plan, setPlan] = useState("Besoin d'innovation...");
 
-  const handlePlanSelection = (price) => {
-    setPlan(price);
-  };
+  // const handlePlanSelection = (price) => {
+  //   setPlan(price);
+  // };
 
   return (
     <Router>
       <div className="bg-gray-900 text-white px-[3vw]">
         <Header />
-        <Hero />
-        <Realizations />
-        <Services />
-        <Arguments />
-        <Reviews />
-        {/* <Process /> */}
-        <Pricing onSelectPlan={handlePlanSelection} plan={plan} />
-        <Contact plan={plan} />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/thank-you" element={<Thanks />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
+        </Routes>
         <Socials />
         <Footer />
-        <Routes>
-          <Route path="/thank-you" element={<Thanks />} />
-        </Routes>
-        {/* <Blog /> */}
       </div>
     </Router>
   );

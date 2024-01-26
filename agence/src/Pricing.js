@@ -54,9 +54,11 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{basic.support}</li>
               <li className="mb-2">{basic.features}</li>
             </ul>
-            <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-              Démarrer
-            </button>
+            <a href="/#contact">
+              <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
+                Démarrer
+              </button>
+            </a>
           </div>
         </div>
 
@@ -83,9 +85,11 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{standard.support}</li>
               <li className="mb-2">{standard.features}</li>
             </ul>
-            <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-              Démarrer
-            </button>
+            <a href="/#contact">
+              <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
+                Démarrer
+              </button>
+            </a>
           </div>
         </div>
 
@@ -112,9 +116,11 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{premium.support}</li>
               <li className="mb-2">{premium.features}</li>
             </ul>
-            <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
-              Démarrer
-            </button>
+            <a href="/#contact">
+              <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
+                Démarrer
+              </button>
+            </a>
           </div>
         </div>
       </div>
