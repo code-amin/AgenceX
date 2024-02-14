@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 w-full text-gray-400 py-4 left-0  absolute  ">
+    <footer className="bg-[#2C3333] w-full text-gray-400 py-4 left-0  absolute  ">
       {/* Sitemap */}
       <div className="w-full  sm:mb-0">
         <ul className="flex flex-wrap justify-center md:flex-nowrap">

@@ -2,7 +2,7 @@ const Menu = ({ isMenuOpen, handleHamburger }) => {
   return (
     <>
       <nav
-        className={`MENU h-screen fixed text-3xl top-16 transition-all w-3/4 py-3 bg-gray-800 shadow-2xl duration-500 ${
+        className={`MENU h-screen fixed text-3xl top-16 transition-all w-3/4 py-3 bg-[#395B64] shadow-2xl duration-500 ${
           isMenuOpen ? "right-0" : "-right-full"
         }  `}
       >

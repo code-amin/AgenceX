@@ -28,7 +28,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
     fr: "Plan Premium",
   };
   return (
-    <div id="pricing" className="bg-gray-900 py-8 pt-24">
+    <div id="pricing" className="bg-[#2C3333] py-8 pt-24">
       <h2 className="text-2xl font-bold text-white text-center mb-8">
         Tarification
       </h2>
@@ -37,7 +37,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
         <div
           className={`bg-white shadow-md rounded-lg w-full md:w-1/3 md:mx-4 mb-4 ${
             plan === basic.fr
-              ? "outline outline-offset-4 outline-yellow-400 "
+              ? "outline outline-offset-4 outline-[#E7F6F2]  "
               : "outline-none"
           }`}
           onClick={() => {
@@ -55,7 +55,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{basic.features}</li>
             </ul>
             <a href="/#contact">
-              <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
+              <button className="block mx-auto bg-[#395B64] text-white py-2 px-4 mt-6 rounded-md hover:bg-[#A5C9CA]">
                 Démarrer
               </button>
             </a>
@@ -66,7 +66,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
         <div
           className={`bg-white shadow-md rounded-lg w-full md:w-1/3 md:mx-4 mb-4 ${
             plan === standard.fr
-              ? "outline outline-offset-4 outline-yellow-400 "
+              ? "outline outline-offset-4 outline-[#E7F6F2]  "
               : "outline-none"
           }`}
           onClick={() => {
@@ -86,7 +86,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{standard.features}</li>
             </ul>
             <a href="/#contact">
-              <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
+              <button className="block mx-auto bg-[#395B64] text-white py-2 px-4 mt-6 rounded-md hover:bg-[#A5C9CA]">
                 Démarrer
               </button>
             </a>
@@ -97,7 +97,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
         <div
           className={`bg-white shadow-md rounded-lg w-full md:w-1/3 md:mx-4 mb-4 ${
             plan === premium.fr
-              ? "outline outline-offset-4 outline-yellow-400 "
+              ? "outline outline-offset-4 outline-[#E7F6F2] "
               : "outline-none"
           }`}
           onClick={() => {
@@ -117,7 +117,7 @@ const Pricing = ({ onSelectPlan, plan }) => {
               <li className="mb-2">{premium.features}</li>
             </ul>
             <a href="/#contact">
-              <button className="block mx-auto bg-yellow-500 text-white py-2 px-4 mt-6 rounded-md hover:bg-yellow-400">
+              <button className="block mx-auto bg-[#395B64] text-white py-2 px-4 mt-6 rounded-md hover:bg-[#A5C9CA]">
                 Démarrer
               </button>
             </a>

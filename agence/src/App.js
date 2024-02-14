@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="bg-gray-900 text-white px-[3vw]">
+      <div className="bg-[#2C3333] text-white px-[3vw]">
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />

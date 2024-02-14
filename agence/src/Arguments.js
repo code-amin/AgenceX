@@ -5,9 +5,9 @@ const Arguments = () => {
         Pourquoi choisir <span className="font-medium">Agence </span>
         <span className="font-extrabold"></span> X
       </h2>
-      <div className="flex flex-col md:flex-row gap-4 justify-center">
-        <div className="bg-gray-800 p-6 rounded-lg text-center">
-          <h3 className="text-2xl text-white-500 mb-4 inline-block rounded-xl p-2 hover:bg-yellow-500 transition-all ease-in duration-1000">
+      <div className="flex flex-col md:flex-row gap-4 justify-center text-[#395B64]">
+        <div className="bg-[#E7F6F2] p-6 rounded-lg text-center">
+          <h3 className="text-2xl text-white-500 mb-4 inline-block rounded-xl p-2  transition-all ease-in duration-1000">
             L'innovation est notre raison d'être.
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
@@ -19,8 +19,8 @@ const Arguments = () => {
             pas seulement actuelles, mais à la pointe de la technologie.
           </p> */}
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg text-center">
-          <h3 className="text-2xl text-white-500 mb-2 inline-block rounded-xl p-2 hover:bg-purple-500 transition-all ease-in duration-1000">
+        <div className="bg-[#E7F6F2] p-6 rounded-lg text-center">
+          <h3 className="text-2xl text-white-500 mb-2 inline-block rounded-xl p-2  transition-all ease-in duration-1000">
             Des solutions adaptées pour votre réussite
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
@@ -34,8 +34,8 @@ const Arguments = () => {
             visibilité de la marque.
           </p> */}
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg text-center">
-          <h3 className="text-2xl text-white-500 m-2 inline-block rounded-xl hover:bg-pink-500 transition-all ease-in duration-1000">
+        <div className="bg-[#E7F6F2] p-6 rounded-lg text-center">
+          <h3 className="text-2xl text-white-500 m-2 inline-block rounded-xl  transition-all ease-in duration-1000">
             {" "}
             Un support exceptionnel et une collaboration de qualité
           </h3>
