@@ -12,9 +12,7 @@ const Realizations = () => {
           id="card"
           className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-2 lg:max-w-[450px] "
         >
-          <h3 className="rounded-xl text-2xl font-bold mb-2">
-            PWR Vision 
-          </h3>
+          <h3 className="rounded-xl text-2xl font-bold mb-2">PWR Vision</h3>
           <p className=" mb-4 min-h-[75px]">
             Commerce en ligne Shopify pour vente d'accessoires oculaires.
           </p>
@@ -33,13 +31,8 @@ const Realizations = () => {
           id="card"
           className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-1  lg:max-w-[450px]"
         >
-          <a
-            href="https://github.com/MhammedDoukkali/ReachOut#reachout"
-            target="_blank"
-          >
-            <h3 className="rounded-xl text-2xl font-bold mb-2">
-              ReachOut 
-            </h3>
+          <a href="" target="_blank">
+            <h3 className="rounded-xl text-2xl font-bold mb-2">ReachOut</h3>
             <p className=" mb-4 min-h-[75px]">
               Application web pour un organisme qui promouvois la santé physique
               et mentale.
@@ -60,13 +53,8 @@ const Realizations = () => {
           id="card"
           className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-1000 md:max-w-[350px] md:order-3  lg:max-w-[450px]"
         >
-          <a
-            href="https://github.com/code-amin/GoFinance/tree/main#gofinance-is-a-simple-and-efficient-web-application-that-retrives-your-favorite-stock-data-all-in-one-place"
-            target="_blank"
-          >
-            <h3 className="rounded-xl text-2xl font-bold mb-2">
-              Go Finance 
-            </h3>
+          <a href="" target="_blank">
+            <h3 className="rounded-xl text-2xl font-bold mb-2">Go Finance</h3>
             <p className=" mb-4 min-h-[75px]">
               Application web frontale et dorsale pour suivre ses titres et
               nouvelles boursières.

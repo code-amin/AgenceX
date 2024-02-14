@@ -43,6 +43,9 @@ const Menu = ({ isMenuOpen, handleHamburger }) => {
               Contact
             </a>
           </li>
+          <li className="hover:underline hidden md:block pl-3 md:pl-8">
+            <button>FR</button>
+          </li>
         </ul>
       </nav>
     </>
