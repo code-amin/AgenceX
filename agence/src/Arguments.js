@@ -2,8 +2,8 @@ const Arguments = () => {
   return (
     <div id="arguments">
       <h2 className=" text-center mb-4 text-3xl lg:text-4xl ">
-        Pourquoi choisir <span className="font-medium">Agence </span>
-        <span className="font-extrabold"></span> X
+        Pourquoi choisir <span className="font-medium">licorne</span>
+        <span className="font-thin">labs</span> 🦄
       </h2>
       <div className="flex flex-col md:flex-row gap-4 justify-center">
         <div className="bg-gray-800 p-6 rounded-lg text-center">
@@ -11,7 +11,7 @@ const Arguments = () => {
             L'innovation est notre raison d'être.
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
-            Chez Agence X , nous apportons une richesse d'expertise à votre
+            Chez Licorne Labs, nous apportons une richesse d'expertise à votre
             projet. Notre équipe de développement chevronnée maîtrise les
             dernières technologies, frameworks et tendances en matière de
             design. En choisissant notre équipe, vous vous associez à une équipe
@@ -25,7 +25,7 @@ const Arguments = () => {
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
             Nous prenons le temps de comprendre vos besoins uniques et vos
-            objectifs commerciaux. Chez Agence X , nous nous enorgueillissons
+            objectifs commerciaux. Chez Licorne Labs, nous nous enorgueillissons
             de créer des solutions web sur mesure qui correspondent parfaitement
             à vos objectifs. Notre approche collaborative garantit que chaque
             projet est une réflexion sur mesure de votre vision, générant des
@@ -40,7 +40,7 @@ const Arguments = () => {
             Un support exceptionnel et une collaboration de qualité
           </h3>
           {/* <p className="text-white-500 text-sm mb-4">
-            Vivez une expérience centrée sur le client avec Agence X . Notre
+            Vivez une expérience centrée sur le client avec Licorne Labs. Notre
             engagement envers un support client exceptionnel signifie que vous
             n'êtes pas simplement un client ; vous êtes un partenaire précieux.
             Nous accordons la priorité à la communication ouverte, à la

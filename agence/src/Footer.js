@@ -23,7 +23,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex py-3 flex-wrap justify-center md:flex-nowrap">
-          <p>&copy; 2024 Agence X</p>
+          <p>&copy; 2024 licornelabs 🦄 </p>
         </div>
       </div>
     </footer>
